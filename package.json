@@ -5,10 +5,13 @@
   "repository": "https://github.com/ananopaisdojavascript/node-com-typescript.git",
   "author": "ananopaisdojavascript <ananopaisdojavascript@gmail.com>",
   "license": "MIT",
-  "type": "module",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
   "scripts": {
     "dev": "tsnd --exit-child --respawn --transpile-only --ignore-watch node_modules src/server.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "husky"
   },
   "dependencies": {
     "express": "^4.19.2"
@@ -22,6 +25,10 @@
     "eslint": "9.x",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "globals": "^15.3.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "prettier": "3.2.5",
+    "prisma": "^5.14.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.11.0"
