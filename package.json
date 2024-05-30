@@ -1,0 +1,29 @@
+{
+  "name": "node-com-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ananopaisdojavascript/node-com-typescript.git",
+  "author": "ananopaisdojavascript <ananopaisdojavascript@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "tsnd --exit-child --respawn --transpile-only --ignore-watch node_modules src/server.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/express": "^4.17.21",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "9.x",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "globals": "^15.3.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.11.0"
+  }
+}
