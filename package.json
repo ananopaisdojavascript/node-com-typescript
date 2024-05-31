@@ -5,7 +5,6 @@
   "repository": "https://github.com/ananopaisdojavascript/node-com-typescript.git",
   "author": "ananopaisdojavascript <ananopaisdojavascript@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   },
